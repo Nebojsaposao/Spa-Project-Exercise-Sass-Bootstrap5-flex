@@ -1,0 +1,43 @@
+/** @format */
+
+.navbar {
+	z-index: 999;
+
+	&-toggler {
+		border: none;
+		padding: 0.25rem 1rem;
+
+		&:focus {
+			box-shadow: none; /* Uklanja senku */
+			outline: none; /* Uklanja outline */
+		}
+
+		&-icon {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff817e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu'%3E%3Cline x1='3' y1='12' x2='21' y2='12'/%3E%3Cline x1='3' y1='6' x2='21' y2='6'/%3E%3Cline x1='3' y1='18' x2='21' y2='18'/%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: inline-block;
+			height: 30px; /* ili neka druga vrednost */
+			width: 30px; /* ili neka druga vrednost */
+		}
+
+		&.active &-icon {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff817e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'%3E%3Cline x1='18' y1='6' x2='6' y2='18'/%3E%3Cline x1='6' y1='6' x2='18' y2='18'/%3E%3C/svg%3E");
+		}
+	}
+
+	&-nav {
+		.nav-item {
+			display: flex;
+			font-size: 16px;
+			font-weight: 700;
+			justify-content: center;
+			// margin-top: 1rem;
+			text-transform: uppercase;
+
+			& .active {
+				color: #ff817e !important; /* Primer boje za aktivni link */
+			}
+		}
+	}
+}

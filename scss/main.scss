@@ -1,0 +1,20 @@
+/** @format */
+// Uvoz google fonta
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap";
+
+// Uvoz Bootstrap SCSS
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Uvoz varijabli,mixina i komponenti projekta
+@import "./Variables/variables";
+@import "./mixins/banner__tittle__mixin";
+@import "./mixins/button__mixin";
+@import "./Global_setup/global";
+@import "./components/header";
+@import "./components/banner";
+@import "./components/banner_media_query";
+@import "./components/header_media_query";
+
+// Uvoz Bootstrap Icons CSS
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";

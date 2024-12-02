@@ -1,0 +1,41 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile-main": "sass scss/main.scss:css/main.css",
+    "compile-custom": "sass scss/custom.scss:css/custom.css",
+    "watch-main": "chokidar \"scss/main.scss\" \"scss/components/**/*.scss\" -c \"npm run compile-main\"",
+    "watch-custom": "chokidar \"scss/custom.scss\" \"scss/components/**/*.scss\" -c \"npm run compile-custom\"",
+    "start": "npm-run-all --parallel watch-main watch-custom",
+    "sass": "concurrently \"sass --watch scss/main.scss css/main.css\" \"sass --watch scss/custom.scss css/custom.css\"",
+    "lint": "npx stylelint css/**/*.css scss/**/*.scss",
+    "lint:fix": "npx stylelint --fix css/**/*.css scss/**/*.scss",
+    "format": "prettier --write scss/**/*.scss css/**/*.css",
+    "watch": "nodemon -w scss/**/*.scss  -w css/**/*.css --exec \"npm run format && npm run lint:fix && npm run sass || exit 1\"",
+    "start:full": "npm-run-all -p sass watch format lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.7",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.3.3",
+    "sass": "^1.81.0",
+    "stylelint": "^16.10.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-prettier": "^5.0.2",
+    "stylelint-scss": "^6.7.0"
+  }
+}

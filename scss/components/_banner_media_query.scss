@@ -1,0 +1,41 @@
+/** @format */
+@media screen and (width >= 768px) {
+	.banner {
+		&__spa-image {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: -142px;
+			width: 40%;
+		}
+	}
+}
+@media screen and (width >= 992px) {
+	.banner {
+		// Ovdje radimo preko banner__tittle__mixin.scss
+		&__tittle {
+			font-size: 24px;
+		}
+
+		&__heading {
+			font-size: 56px;
+		}
+
+		&__desc {
+			font-size: 22px;
+		}
+
+		&__video-btn {
+			font-size: 15px;
+			margin-left: 15px;
+
+			&__tittle-play {
+				@include tittle($btn-color, "Rufina", 400, 1.5px, 20px, uppercase);
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

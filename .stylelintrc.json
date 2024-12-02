@@ -1,0 +1,37 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "order/properties-alphabetical-order": true,
+    "declaration-empty-line-before": "never",
+    "selector-class-pattern": "^[a-z][a-z0-9-_]*$",
+    "selector-id-pattern": "^[a-zA-Z][a-zA-Z0-9-_]*$",
+    "no-descending-specificity": null,
+    "color-no-invalid-hex": true,
+    "at-rule-empty-line-before": "never",
+    "block-no-empty": true,
+    "declaration-block-no-duplicate-properties": true,
+    "font-family-no-missing-generic-family-keyword": null,
+    "max-nesting-depth": 10,
+    "property-no-unknown": true,
+    "selector-max-id": 1,
+    "scss/at-rule-no-unknown": true,
+    "scss/percent-placeholder-pattern": "^[a-zA-Z_][a-zA-Z0-9_]*$",
+    "scss/at-import-no-partial-leading-underscore": null,
+    "number-max-precision": null,
+    "no-duplicate-selectors": null,
+    "no-irregular-whitespace": null,
+    "import-notation":null,
+    "font-family-no-duplicate-names":null
+  },
+  "overrides": [
+    {
+      "files": ["./scss/main.scss"],
+      "rules": {
+        "function-url-no-scheme-relative": true,
+        "function-url-quotes": "always",
+        "function-no-unknown": true
+      }
+    }
+  ]
+}

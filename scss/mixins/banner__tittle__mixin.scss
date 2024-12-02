@@ -1,0 +1,16 @@
+/** @format */
+@mixin tittle(
+	$color,
+	$font-family,
+	$font-weight,
+	$letter-spacing,
+	$margin-bottom,
+	$text-transform
+) {
+	color: $color;
+	font-family: $font-family;
+	font-weight: $font-weight;
+	letter-spacing: $letter-spacing;
+	margin-bottom: $margin-bottom;
+	text-transform: $text-transform;
+}

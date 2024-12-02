@@ -1,0 +1,16 @@
+/** @format */
+@mixin button(
+	$bg-color,
+	$border,
+	$border-radius,
+	$padding,
+	$text-decoration,
+	$text-transform
+) {
+	background-color: $bg-color;
+	border: $border;
+	border-radius: $border-radius;
+	padding: $padding;
+	text-decoration: $text-decoration;
+	text-transform: $text-transform;
+}

@@ -1,0 +1,62 @@
+/** @format */
+.banner {
+	background-image: url("../../images/banner/leaf.png");
+	background-position-x: left;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	background-size: 12.5%;
+	padding: 8% 0;
+	position: relative;
+
+	&__spa-image {
+		display: none;
+	}
+	// Ovdje radimo preko banner__tittle__mixin.scss
+	&__tittle {
+		@include tittle($btn-color, "Rufina", 400, 1.5px, 20px, uppercase);
+	}
+
+	&__heading {
+		color: $heading-color;
+		font-size: $heading-font-size;
+		line-height: 60px;
+		margin-top: 25px;
+	}
+
+	&__desc {
+		color: $paragraf-color;
+		margin-bottom: 50px;
+		margin-top: 17px;
+	}
+
+	&__btn {
+		@include button(
+			$btn-color,
+			1px solid $btn-color,
+			50px,
+			15px 10px,
+			none,
+			uppercase
+		);
+
+		&:hover {
+			background-color: $bg-color;
+			border-color: $btn-color;
+			color: $btn-color;
+			text-decoration: none;
+		}
+	}
+
+	&__video-btn {
+		font-size: 15px;
+		margin-left: 15px;
+
+		&__tittle-play {
+			@include tittle($btn-color, "Rufina", 400, 1.5px, 20px, uppercase);
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
