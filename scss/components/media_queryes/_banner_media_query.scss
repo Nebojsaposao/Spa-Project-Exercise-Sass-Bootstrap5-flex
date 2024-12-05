@@ -10,7 +10,7 @@
 		}
 	}
 }
-@media screen and (width >= 992px) {
+@media screen and (width >= 1024px) {
 	.banner {
 		// Ovdje radimo preko banner__tittle__mixin.scss
 		&__tittle {
@@ -26,15 +26,8 @@
 		}
 
 		&__video-btn {
-			font-size: 15px;
-			margin-left: 15px;
-
 			&__tittle-play {
-				@include tittle($btn-color, "Rufina", 400, 1.5px, 20px, uppercase);
-
-				&:hover {
-					text-decoration: underline;
-				}
+				font-size: 18px;
 			}
 		}
 	}

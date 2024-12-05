@@ -34,7 +34,7 @@
 			$btn-color,
 			1px solid $btn-color,
 			50px,
-			15px 10px,
+			15px,
 			none,
 			uppercase
 		);
@@ -52,7 +52,8 @@
 		margin-left: 15px;
 
 		&__tittle-play {
-			@include tittle($btn-color, "Rufina", 400, 1.5px, 20px, uppercase);
+			@include tittle($btn-color, "Rufina", 400, 1.2px, 20px, uppercase);
+			font-size: 12.3px;
 
 			&:hover {
 				text-decoration: underline;

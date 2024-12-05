@@ -11961,7 +11961,7 @@ section {
   margin-top: 25px;
 }
 .banner__desc {
-  color: #424242;
+  color: #686868;
   margin-bottom: 50px;
   margin-top: 17px;
 }
@@ -11969,7 +11969,7 @@ section {
   background-color: #ff817e;
   border: 1px solid #ff817e;
   border-radius: 50px;
-  padding: 15px 10px;
+  padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -11987,14 +11987,71 @@ section {
   color: #ff817e;
   font-family: "Rufina";
   font-weight: 400;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  font-size: 12.3px;
 }
 .banner__video-btn__tittle-play:hover {
   text-decoration: underline;
 }
 
+/** @format */
+.about {
+  position: relative;
+}
+.about__img {
+  margin-bottom: 165px;
+}
+.about__img__flower-rose {
+  left: 10%;
+  min-width: 150px;
+  position: absolute;
+}
+.about__abt > img {
+  left: 70%;
+  position: absolute;
+  top: -25px;
+}
+.about__abt__tagline {
+  color: #ff817e;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 0.8;
+  margin-bottom: 27px;
+}
+.about__abt__sec-tittle {
+  color: #1e2528;
+  font-size: 33px;
+  margin-bottom: 32px;
+}
+.about__abt__desc {
+  color: #686868;
+  font-weight: 400;
+  text-align: left;
+}
+.about__read-more__btn {
+  background-color: #ff817e;
+  border: 1px solid #ff817e;
+  border-radius: 50px;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.about__read-more__btn:hover {
+  background-color: #fff;
+  border-color: #ff817e;
+  color: #ff817e;
+  text-decoration: none;
+}
+
+/** @format */
+@media screen and (width >= 1024px) {
+  .navbar-nav .nav-item {
+    font-size: 20px;
+  }
+}
 /** @format */
 @media screen and (width >= 768px) {
   .banner__spa-image {
@@ -12005,7 +12062,7 @@ section {
     width: 40%;
   }
 }
-@media screen and (width >= 992px) {
+@media screen and (width >= 1024px) {
   .banner__tittle {
     font-size: 24px;
   }
@@ -12015,25 +12072,19 @@ section {
   .banner__desc {
     font-size: 22px;
   }
-  .banner__video-btn {
-    font-size: 15px;
-    margin-left: 15px;
-  }
   .banner__video-btn__tittle-play {
-    color: #ff817e;
-    font-family: "Rufina";
-    font-weight: 400;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  .banner__video-btn__tittle-play:hover {
-    text-decoration: underline;
+    font-size: 18px;
   }
 }
 /** @format */
-@media screen and (width >= 992px) {
-  .navbar-nav .nav-item {
+@media screen and (width >= 1024px) {
+  .about__abt__tagline {
+    font-size: 22px;
+  }
+  .about__abt__sec-tittle {
+    font-size: 40px;
+  }
+  .about__abt__desc {
     font-size: 20px;
   }
 }

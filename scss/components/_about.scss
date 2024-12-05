@@ -1,0 +1,65 @@
+/** @format */
+
+.about {
+	position: relative;
+
+	&__img {
+		margin-bottom: 165px;
+
+		&__flower-rose {
+			left: 10%;
+			min-width: 150px;
+			position: absolute;
+		}
+	}
+
+	&__abt {
+		> img {
+			left: 70%;
+			position: absolute;
+			top: -25px;
+		}
+
+		&__tagline {
+			color: $btn-color;
+			display: block;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 0.8;
+			margin-bottom: 27px;
+		}
+
+		&__sec-tittle {
+			color: $heading-color;
+			font-size: 33px;
+			margin-bottom: 32px;
+		}
+
+		&__desc {
+			color: $paragraf-color;
+			font-weight: 400;
+			text-align: left;
+		}
+	}
+
+	&__read-more{
+
+		&__btn{
+			@include button(
+			$btn-color,
+			1px solid $btn-color,
+			50px,
+			15px,
+			none,
+			uppercase
+		);
+
+		&:hover {
+			background-color: $bg-color;
+			border-color: $btn-color;
+			color: $btn-color;
+			text-decoration: none;
+		}
+		}
+	}
+}

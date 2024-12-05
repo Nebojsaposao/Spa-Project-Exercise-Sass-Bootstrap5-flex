@@ -13,8 +13,10 @@
 @import "./Global_setup/global";
 @import "./components/header";
 @import "./components/banner";
-@import "./components/banner_media_query";
-@import "./components/header_media_query";
+@import "./components/about";
+@import "./components/media_queryes/header_media_query";
+@import "./components/media_queryes/banner_media_query";
+@import "./components/media_queryes/about_media_query";
 
 // Uvoz Bootstrap Icons CSS
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
