@@ -1,0 +1,28 @@
+@media screen and (min-width:768px){
+  .service{
+    &__two,
+    &__free{
+      display: block;
+
+      &:hover{
+       .service__single-service--hover{
+         bottom: 0;
+       }
+      }
+    }
+  }
+};
+
+@media screen and (min-width:992px){
+  .service{
+    &__four{
+      display: block;
+
+      &:hover{
+       .service__single-service--hover{
+         bottom: 0;
+       }
+      }
+    }
+  }
+}

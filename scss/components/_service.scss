@@ -1,0 +1,50 @@
+/** @format */
+.service{
+  margin-bottom: 40px;
+  padding: 50px 0;
+
+  &__two,
+  &__free,
+  &__four{
+    display: none;
+  }
+
+  &__single-service{
+    cursor: pointer;
+    // Ovo overflow drzimo zakomentarisano dok sve ne napravimo pa ga onda otkomentarisemo
+    overflow: hidden;
+    position: relative;
+
+    >img{
+      width: 100%;
+    }
+    // Ovdje poziciju stavljamo na bottom -100%
+    &--hover{
+      background-color:$btn-hover-color;
+      position: absolute;
+      bottom: -100%;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease-in-out;
+
+      span{
+        color: $bg-color;
+        font-family: "Rufina", serif;
+        font-weight: 700;
+        margin-top: 3%;
+      }
+    }
+  }
+  // Ovdje poziciju stavljamo na 0
+  &__one{
+    &:hover{
+      .service__single-service--hover{
+        bottom: 0;
+      }
+    }
+  }
+}

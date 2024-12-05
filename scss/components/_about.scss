@@ -42,24 +42,23 @@
 		}
 	}
 
-	&__read-more{
-
-		&__btn{
+	&__read-more {
+		&__btn {
 			@include button(
-			$btn-color,
-			1px solid $btn-color,
-			50px,
-			15px,
-			none,
-			uppercase
-		);
+				$btn-color,
+				1px solid $btn-color,
+				50px,
+				15px,
+				none,
+				uppercase
+			);
 
-		&:hover {
-			background-color: $bg-color;
-			border-color: $btn-color;
-			color: $btn-color;
-			text-decoration: none;
-		}
+			&:hover {
+				background-color: $bg-color;
+				border-color: $btn-color;
+				color: $btn-color;
+				text-decoration: none;
+			}
 		}
 	}
 }

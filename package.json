@@ -12,8 +12,8 @@
     "lint": "npx stylelint css/**/*.css scss/**/*.scss",
     "lint:fix": "npx stylelint --fix css/**/*.css scss/**/*.scss",
     "format": "prettier --write scss/**/*.scss css/**/*.css",
-    "watch": "nodemon -w scss/**/*.scss  -w css/**/*.css --exec \"npm run format && npm run lint:fix && npm run sass || exit 1\"",
-    "start:full": "npm-run-all -p sass watch format lint"
+    "watch": "nodemon -w scss/**/*.scss  -w css/**/*.css --exec \"npm run lint:fix && npm run format && npm run sass || exit 1\"",
+    "start:full": "npm run watch"
   },
   "keywords": [],
   "author": "",
