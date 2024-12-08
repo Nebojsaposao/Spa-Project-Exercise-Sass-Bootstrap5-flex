@@ -31,13 +31,16 @@
 
 		&__sec-tittle {
 			color: $heading-color;
+			font-family: Rufina, sans-serif;
 			font-size: 33px;
+			font-weight: 700;
 			margin-bottom: 32px;
 		}
 
 		&__desc {
 			color: $paragraf-color;
 			font-weight: 400;
+			line-height: 35px;
 			text-align: center;
 		}
 	}

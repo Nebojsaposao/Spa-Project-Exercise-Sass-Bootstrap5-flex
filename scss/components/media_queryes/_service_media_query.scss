@@ -1,6 +1,10 @@
 /** @format */
 @media screen and (width >=768px) {
 	.service {
+		&__sec-tittle {
+			font-size: 38px;
+		}
+
 		&__two,
 		&__free {
 			display: block;

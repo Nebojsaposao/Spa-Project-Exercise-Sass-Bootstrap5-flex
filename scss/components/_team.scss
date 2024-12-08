@@ -1,0 +1,104 @@
+/** @format */
+
+.team {
+	&__section-heading {
+		margin-bottom: 70px;
+
+		&__sec-tittle {
+			color: $heading-color;
+			font-family: Rufina, sans-serif;
+			font-size: 33px;
+			font-weight: 700;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+
+		&__sec-desc {
+			color: $paragraf-color;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 35px;
+			margin-bottom: 0;
+		}
+	}
+
+	&__single-memb {
+		border: 1px solid $border-color;
+		margin-bottom: 30px;
+
+		> img {
+			height: auto;
+			width: 100%;
+		}
+
+		&__memb-info {
+			background-color: $bg-color;
+			box-shadow: 0 5px 20px $box-shadow-color;
+			margin-top: 20px;
+
+			> h6 {
+				color: $link-color;
+				font-size: 16px;
+				margin-bottom: 0;
+			}
+
+			> span {
+				color: $paragraf-color;
+				display: block;
+				margin-bottom: 15px;
+			}
+		}
+
+		&:hover {
+			.team__single-memb__memb-info--memb-social {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+		&__memb-info--memb-social {
+			margin-bottom: 10px;
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+			visibility: hidden;
+
+			> li {
+				display: inline-block;
+
+				&:not(:last-child) {
+					margin-right: 20px;
+				}
+
+				> a {
+					background-size: cover;
+					border-radius: 15px;
+					display: block;
+					height: 40px;
+					text-indent: -9999px;
+					transition: all 0.3s ease-in-out;
+					width: 40px;
+
+					&.fb {
+						background-image: url("../../images/social/facebook.png");
+					}
+
+					&.tw {
+						background-image: url("../../images/social/twitter.png");
+					}
+
+					&.yt {
+						background-image: url("../../images/social/youtube.png");
+					}
+
+					&.in {
+						background-image: url("../../images/social/instagram.png");
+					}
+
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
+}

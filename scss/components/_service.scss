@@ -3,6 +3,15 @@
 	margin-bottom: 40px;
 	padding: 50px 0;
 
+	&__sec-tittle {
+		color: $heading-color;
+		font-family: Rufina, sans-serif;
+		font-size: 33px;
+		font-weight: 700;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
 	&__two,
 	&__free,
 	&__four {

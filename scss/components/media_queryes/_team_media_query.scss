@@ -1,0 +1,35 @@
+/** @format */
+@media screen and (width >= 1024px) {
+	.team {
+		&__section-heading {
+			&__sec-tittle {
+				font-size: 38px;
+			}
+
+			&__sec-desc {
+				font-size: 20px;
+			}
+		}
+
+		&__single-memb {
+			border: 1px solid $border-color;
+			margin-bottom: 30px;
+
+			> img {
+				height: auto;
+				width: 100%;
+			}
+
+			&__memb-info {
+
+				> h6 {
+					font-size: 22px;
+				}
+
+				> span {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
