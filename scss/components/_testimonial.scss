@@ -1,49 +1,49 @@
-.testimonial{
-  background-color: $carousel-color;
-  text-align: center;
+/** @format */
 
-  &__single{
-    
-    > img{
-      margin: 0 auto 45px;
-    }
+.testimonial {
+	background-color: $carousel-color;
+	text-align: center;
 
-    > p{
-      color: $link-color;
-      font-family: "Rufina", san-serif;
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 35px;
-      letter-spacing: 1.6;
-      margin-bottom: 43px;
-    }
-  }
+	&__single {
+		> img {
+			margin: 0 auto 45px;
+		}
 
-  &__client-info{
+		> p {
+			color: $link-color;
+			font-family: Rufina, san-serif;
+			font-size: 15px;
+			font-weight: 500;
+			letter-spacing: 1.6;
+			line-height: 35px;
+			margin-bottom: 43px;
+		}
+	}
 
-    > img{
-      border-radius: 50%;
-      width: 76px;
-      height: 76px;
-      margin-bottom: 22px;
-    }
+	&__client-info {
+		> img {
+			border-radius: 50%;
+			height: 76px;
+			margin-bottom: 22px;
+			width: 76px;
+		}
 
-    > p{
-      font-size: 18px;
-      margin-bottom: 22px;
+		> p {
+			font-size: 18px;
+			margin-bottom: 22px;
 
-      > span{
-        font-size: 16px;
-        font-weight: 700;
-      }
-    }
-  }
+			> span {
+				font-size: 16px;
+				font-weight: 700;
+			}
+		}
+	}
 
-  & .carousel-indicators{
-    margin-bottom: 45px;
+	& .carousel-indicators {
+		margin-bottom: 45px;
 
-    &-btn{
-      background-color: $btn-color; // Postavite boju dugmadi
-    }
-  }
+		&-btn {
+			background-color: $btn-color; // Postavite boju dugmadi
+		}
+	}
 }

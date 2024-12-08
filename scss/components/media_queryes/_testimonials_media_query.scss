@@ -1,23 +1,21 @@
+/** @format */
+
 @media screen and (width >= 1024px) {
-	.testimonial{
+	.testimonial {
+		&__single {
+			> p {
+				font-size: 20px;
+			}
+		}
 
-  &__single{
-    
-    > p{
-      font-size: 20px;
-      
-    }
-  }
+		&__client-info {
+			> p {
+				font-size: 24px;
 
-  &__client-info{
-
-    > p{
-      font-size: 24px;
-
-      > span{
-        font-size: 20px;
-      }
-    }
-  }
- }
+				> span {
+					font-size: 20px;
+				}
+			}
+		}
+	}
 }
