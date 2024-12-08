@@ -1,0 +1,27 @@
+/** @format */
+@media screen and (width >= 1024px) {
+	.procedures {
+		&__section {
+			&-tittle {
+				font-size: 40px;
+			}
+
+			&-desc {
+				font-size: 20px;
+			}
+		}
+
+		&__post {
+			&__heading {
+				a {
+					font-size: 24px;
+				}
+			}
+
+			&__desc {
+				font-size: 20px;
+				font-weight: 300;
+			}
+		}
+	}
+}

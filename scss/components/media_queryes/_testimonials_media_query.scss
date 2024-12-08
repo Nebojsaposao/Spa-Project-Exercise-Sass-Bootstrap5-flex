@@ -1,0 +1,23 @@
+@media screen and (width >= 1024px) {
+	.testimonial{
+
+  &__single{
+    
+    > p{
+      font-size: 20px;
+      
+    }
+  }
+
+  &__client-info{
+
+    > p{
+      font-size: 24px;
+
+      > span{
+        font-size: 20px;
+      }
+    }
+  }
+ }
+}

@@ -1,7 +1,7 @@
 /** @format */
 
 .navbar {
-	z-index: 999;
+	position: relative;
 
 	&-toggler {
 		border: none;
@@ -34,6 +34,7 @@
 			justify-content: center;
 			// margin-top: 1rem;
 			text-transform: uppercase;
+			z-index: 999;
 
 			& .active {
 				color: #ff817e !important; /* Primer boje za aktivni link */

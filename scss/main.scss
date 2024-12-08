@@ -15,10 +15,14 @@
 @import "./components/banner";
 @import "./components/about";
 @import "./components/service";
+@import "./components/procedures";
+@import "./components/testimonial";
 @import "./components/media_queryes/header_media_query";
 @import "./components/media_queryes/banner_media_query";
 @import "./components/media_queryes/about_media_query";
 @import "./components/media_queryes/service_media_query";
+@import "./components/media_queryes/procedures_media_query";
+@import "./components/media_queryes/testimonials_media_query";
 
 // Uvoz Bootstrap Icons CSS
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";

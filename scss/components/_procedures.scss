@@ -1,0 +1,65 @@
+/** @format */
+
+.procedures {
+	&__section {
+		&-tittle {
+			color: $heading-color;
+			font-size: 33px;
+			margin-bottom: 32px;
+		}
+
+		&-desc {
+			color: $paragraf-color;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 27px;
+			margin-bottom: 0;
+		}
+	}
+
+	&__post {
+		border: 1px solid $border-color;
+		margin-bottom: 30px;
+		margin-top: 70px;
+		padding: 20px;
+		text-align: center;
+
+		&:hover {
+			box-shadow: 0 10px 20px $box-shadow-color;
+		}
+
+		> img {
+			margin-bottom: 35px;
+			width: 100%;
+		}
+
+		&__heading {
+			a {
+				color: $link-color;
+				cursor: pointer;
+				font-size: 16px;
+			}
+		}
+
+		&__desc {
+			color: $paragraf-color;
+			margin-bottom: 40px;
+		}
+
+		&__btn {
+			background-color: #ff817e;
+			border: 1px solid #ff817e;
+			border-radius: 50px;
+			padding: 15px;
+			text-decoration: none;
+			text-transform: uppercase;
+
+			&:hover {
+				background-color: $bg-color;
+				border-color: $btn-color;
+				color: $btn-color;
+				text-decoration: none;
+			}
+		}
+	}
+}
