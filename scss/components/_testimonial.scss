@@ -2,8 +2,9 @@
 
 .testimonial {
 	background-color: $carousel-color;
-	text-align: center;
 	border: 1px solid $border-color;
+	text-align: center;
+	
 
 	&__single {
 		> img {

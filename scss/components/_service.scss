@@ -19,12 +19,12 @@
 	}
 
 	&__single-service {
+		border: 1px solid $border-color;
 		cursor: pointer;
 		// Ovo overflow drzimo zakomentarisano dok sve ne napravimo pa ga onda otkomentarisemo
 		overflow: hidden;
-		position: relative;
-		border: 1px solid $border-color;
 		padding: 2px;
+		position: relative;
 
 		> img {
 			width: 100%;

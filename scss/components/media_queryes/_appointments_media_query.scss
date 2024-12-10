@@ -1,16 +1,14 @@
 /** @format */
 @media screen and (width >= 1024px) {
 	.appointment {
-		
+    
 		&__img {
 			display: block;
-      width: 30%;
-      margin-right: 50px;
+			margin-right: 50px;
+			width: 30%;
 		}
 
 		&__appointment-form {
-      
-
 			&--input-field {
 				font-size: 15px;
 			}

@@ -12069,11 +12069,11 @@ section {
   display: none;
 }
 .service__single-service {
+  border: 1px solid #e3e6ea;
   cursor: pointer;
   overflow: hidden;
-  position: relative;
-  border: 1px solid #e3e6ea;
   padding: 2px;
+  position: relative;
 }
 .service__single-service > img {
   width: 100%;
@@ -12154,8 +12154,8 @@ section {
 /** @format */
 .testimonial {
   background-color: #fff9f8;
-  text-align: center;
   border: 1px solid #e3e6ea;
+  text-align: center;
 }
 .testimonial__single > img {
   margin: 0 auto 45px;
@@ -12276,9 +12276,9 @@ section {
 .appointment {
   align-items: center;
   background-color: #fff9f8;
+  border: 1px solid #e3e6ea;
   display: flex;
   justify-content: center;
-  border: 1px solid #e3e6ea;
 }
 .appointment__img {
   display: none;
@@ -12428,8 +12428,8 @@ section {
 @media screen and (width >= 1024px) {
   .appointment__img {
     display: block;
-    width: 30%;
     margin-right: 50px;
+    width: 30%;
   }
   .appointment__appointment-form--input-field {
     font-size: 15px;
