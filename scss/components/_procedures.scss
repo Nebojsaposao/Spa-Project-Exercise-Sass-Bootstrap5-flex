@@ -47,12 +47,14 @@
 		}
 
 		&__btn {
-			background-color: #ff817e;
-			border: 1px solid #ff817e;
-			border-radius: 50px;
-			padding: 15px;
-			text-decoration: none;
-			text-transform: uppercase;
+			@include button(
+				$btn-color,
+				1px solid $btn-color,
+				50px,
+				15px,
+				none,
+				uppercase
+			);
 
 			&:hover {
 				background-color: $bg-color;

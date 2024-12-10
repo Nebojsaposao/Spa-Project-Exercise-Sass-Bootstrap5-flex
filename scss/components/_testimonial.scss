@@ -3,6 +3,7 @@
 .testimonial {
 	background-color: $carousel-color;
 	text-align: center;
+	border: 1px solid $border-color;
 
 	&__single {
 		> img {

@@ -23,6 +23,8 @@
 		// Ovo overflow drzimo zakomentarisano dok sve ne napravimo pa ga onda otkomentarisemo
 		overflow: hidden;
 		position: relative;
+		border: 1px solid $border-color;
+		padding: 2px;
 
 		> img {
 			width: 100%;
