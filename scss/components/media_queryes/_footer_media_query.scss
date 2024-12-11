@@ -1,0 +1,10 @@
+/** @format */
+@media screen and (width >= 992px) {
+	.main-footer {
+		&__nav {
+			& .nav-item {
+				display: inline-block;
+			}
+		}
+	}
+}

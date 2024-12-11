@@ -11852,6 +11852,7 @@ textarea.form-control-lg {
 /** @format */
 /** @format */
 /** @format */
+/** @format */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12241,6 +12242,10 @@ section {
   transition: opacity 0.5s ease-in-out;
   visibility: hidden;
 }
+.team__single-memb__memb-info--memb-social.active {
+  opacity: 1;
+  visibility: visible;
+}
 .team__single-memb__memb-info--memb-social > li {
   display: inline-block;
 }
@@ -12253,7 +12258,7 @@ section {
   display: block;
   height: 40px;
   text-indent: -9999px;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s;
   width: 40px;
 }
 .team__single-memb__memb-info--memb-social > li > a.fb {
@@ -12277,6 +12282,7 @@ section {
   align-items: center;
   background-color: #fff9f8;
   border: 1px solid #e3e6ea;
+  border-bottom: none;
   display: flex;
   justify-content: center;
 }
@@ -12312,7 +12318,70 @@ section {
 }
 
 /** @format */
-@media screen and (width >= 1024px) {
+.main-footer {
+  background-color: #fff9f8;
+  border: 1px solid #e3e6ea;
+  border-top: none;
+  margin-top: 50px;
+  padding: 80px 0 60px;
+}
+.main-footer__nav .nav-item {
+  display: none;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+  margin-right: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  z-index: 999;
+}
+.main-footer__nav .active {
+  color: #ff817e !important;
+}
+.main-footer__social {
+  margin: 30px 0;
+}
+.main-footer__social > li {
+  display: inline-block;
+}
+.main-footer__social > li:not(:last-child) {
+  margin-right: 10px;
+}
+.main-footer__social > li > a {
+  background-size: cover;
+  border-radius: 15px;
+  display: block;
+  height: 40px;
+  text-indent: -9999px;
+  transition: 0.3s;
+  width: 40px;
+}
+.main-footer__social > li > a.fb {
+  background-image: url("../../images/social/facebook.png");
+}
+.main-footer__social > li > a.tw {
+  background-image: url("../../images/social/twitter.png");
+}
+.main-footer__social > li > a.yt {
+  background-image: url("../../images/social/youtube.png");
+}
+.main-footer__social > li > a.in {
+  background-image: url("../../images/social/instagram.png");
+}
+.main-footer__social > li > a:hover {
+  opacity: 0.8;
+}
+.main-footer__copyright {
+  color: #686868;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.main-footer__copyright > a {
+  color: #ff817e;
+}
+
+/** @format */
+@media screen and (width >= 992px) {
   .navbar-nav .nav-item {
     font-size: 20px;
   }
@@ -12327,7 +12396,7 @@ section {
     width: 40%;
   }
 }
-@media screen and (width >= 1024px) {
+@media screen and (width >= 992px) {
   .banner__tittle {
     font-size: 24px;
   }
@@ -12342,7 +12411,7 @@ section {
   }
 }
 /** @format */
-@media screen and (width >= 1024px) {
+@media screen and (width >= 992px) {
   .about__abt__tagline {
     font-size: 22px;
   }
@@ -12374,7 +12443,7 @@ section {
   }
 }
 /** @format */
-@media screen and (width >= 1024px) {
+@media screen and (width >= 992px) {
   .procedures__section-tittle {
     font-size: 40px;
   }
@@ -12390,7 +12459,7 @@ section {
   }
 }
 /** @format */
-@media screen and (width >= 1024px) {
+@media screen and (width >= 992px) {
   .testimonial__single > p {
     font-size: 20px;
   }
@@ -12402,7 +12471,7 @@ section {
   }
 }
 /** @format */
-@media screen and (width >= 1024px) {
+@media screen and (width >= 992px) {
   .team__section-heading__sec-tittle {
     font-size: 38px;
   }
@@ -12425,7 +12494,7 @@ section {
   }
 }
 /** @format */
-@media screen and (width >= 1024px) {
+@media screen and (width >= 992px) {
   .appointment__img {
     display: block;
     margin-right: 50px;
@@ -12433,6 +12502,12 @@ section {
   }
   .appointment__appointment-form--input-field {
     font-size: 15px;
+  }
+}
+/** @format */
+@media screen and (width >= 992px) {
+  .main-footer__nav .nav-item {
+    display: inline-block;
   }
 }
 

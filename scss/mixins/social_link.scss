@@ -1,0 +1,18 @@
+/** @format */
+@mixin soc-net(
+	$background-size,
+	$border-radius,
+	$display,
+	$height,
+	$text-indent,
+	$transition,
+	$width
+) {
+	background-size: $background-size;
+	border-radius: $border-radius;
+	display: $display;
+	height: $height;
+	text-indent: $text-indent;
+	transition: $transition;
+	width: $width;
+}
